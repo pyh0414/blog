@@ -1,16 +1,20 @@
 module.exports = {
-  title: ``,
+  title: `pyh`,
   description: `Blog posted about ...`,
-  author: `[yoenho Park]`,
+  author: `yoenho Park`,
   introduction: `공부한 내용을 정리하고 다른 분들과 공유합니다`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://pyh.netlify.app/`, // Your blog site url
   social: {
     github: `https://github.com/pyh0414`, // Your GitHub account
+    twitter: ``, // Your Twitter account
+    medium: ``, // Your Medium account
+    facebook: ``, // Your Facebook account
+    linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/profile.png`, // Add your favicon
-  keywords: [`blog`],
+  keywords: [`blog`, `javascript`, `books`, `review`],
   comment: {
-    disqusShortName: '', // Your disqus-short-name. check disqus.com.
+    disqusShortName: 'pyh', // Your disqus-short-name. check disqus.com.
     utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
   },
   configs: {
