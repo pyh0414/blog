@@ -2,7 +2,7 @@ module.exports = {
   title: `pyh`,
   description: `Blog posted about ...`,
   author: `yoenho Park`,
-  introduction: `공부한 내용을 정리하고 다른 분들과 공유합니다`,
+  introduction: `공부한 내용을 정리하고 공유합니다`,
   siteUrl: `https://pyh.netlify.app/`, // Your blog site url
   social: {
     github: `https://github.com/pyh0414`, // Your GitHub account
@@ -11,7 +11,7 @@ module.exports = {
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
   },
-  icon: `content/assets/profile.png`, // Add your favicon
+  icon: `content/assets/blog-favicon.png`, // Add your favicon
   keywords: [`blog`, `javascript`, `books`, `review`],
   comment: {
     disqusShortName: 'pyh', // Your disqus-short-name. check disqus.com.
