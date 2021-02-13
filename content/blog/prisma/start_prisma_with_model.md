@@ -1,7 +1,7 @@
 ---
-title: '[Prisma2] model로 시작하는 Prisma'
+title: '[Prisma] model로 시작하는 Prisma'
 date: 2021-02-12 21:02:70
-category: prisma2
+category: prisma
 thumbnail: { thumbnailSrc }
 draft: false
 ---

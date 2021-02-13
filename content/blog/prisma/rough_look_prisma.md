@@ -1,7 +1,7 @@
 ---
-title: Prisma 대충보기
+title: '[Prisma] Prisma 대충보기'
 date: 2021-02-08 19:02:22
-category: Prisma2
+category: prisma
 thumbnail: { thumbnailSrc }
 draft: false
 ---
@@ -18,7 +18,7 @@ Prisma가 지원하는 기능과 특징이 너무나도 많기 때문에 여기�
 
 사실 Prisma1를 사용할 땐 Prisma가 정말 ORM인지 약간은 헷갈렸다. 애초에 ORM이 server/client로 나뉘는 것부터 이해가 안됐다. 밑의 사진에서 server는 Prisma client고 server와 DB사이에 Prisma server가 있었다. 뭐 예전이야 어쨋든 Prisma2로 넘어오면서 ORM의 모습이 갖춰졌고 Next-generation ORM으로 입지를 다지고 있는 것 같다.
 
-![image1.png](./image1.png)
+![image1.png](.images/../images/rough_look_prisma-1.png)
 
 [공식문서](https://www.prisma.io/), [Github](https://github.com/prisma/prisma)에서는 Prisma2 다양하게 소개하고 있다.
 
@@ -42,7 +42,7 @@ Prisma Client, Prisma Migrate, Prisma Studio 중에서 가장 중요한 것은 P
 
 TypeORM, Sequelize ..등 여타 ORM과 마찬가지로 Prisma역시 DB schema를 생성해주는 기능을 지원한다. 바로 Prisma schema인데 Prisma가 가진 아주 강력한 기능이다. 우리는 단지 schema.prisma에서 model을 정의하고 명령어만 입력하면 된다. 그러면 Prisma가 알아서 DB 스키마를 생성해준다.
 
-![image2.png](./image2.png)
+![image2.png](.images/../images/rough_look_prisma-2.png)
 
 무엇보다도 Prisma schema의 가장 큰 장점은 `직관적` `낮은 러닝커브`이다. TypeORM, Sequelize의 코드를 보고 있으면 마치 영어 문장을 해석하는 것 같다(개인적으로). 이런 부분이 우리 뇌를 불편하게 만든다.
 
@@ -69,7 +69,7 @@ Typsa safe라는 말은 `타입이 안정적`이라는 의미로 변수의 타�
 우리가 schema.prisma에 model을 정의하면 이를 기반으로 모든 Type들이 node_modules/@prisma/client에 정의된다(실제 Type들은 node_modules/.prisma/client/index.d.ts에 정의되어 있다).
 이렇게 정의된 Type을 사용하여 Prism는 사용자가 api의 변수명, string을 입력해야 하는데 int를 입력한건 아닌지..등의 모든 유효성 체크를 정의된 Type들을 보고 다 확인한다.
 
-![image5.png](./image5.png)
+![image5.png](.images/../images/rough_look_prisma-5.png)
 
 이렇게 이미 정의된 Type들 덕분에 코드를 작성하면서 발생할 수 있는 여러가지 실수를 줄일 수 있다. 우리는 단지 Prisma가 던져주는 메시지를 읽고 수정하기만 하면 된다.
 
@@ -81,7 +81,7 @@ Typsa safe라는 말은 `타입이 안정적`이라는 의미로 변수의 타�
 
 ## 👍 Prisma Studio
 
-![image4.png](./image4.png)
+![image4.png](.images/../images/rough_look_prisma-4.png)
 
 Prisma Studio는 DB data를 위한 Visual Editor이다. 각각의 model별로 조작이 가능하며 굳이 개발자가 아니더라도 쉽게 사용할 수 있다. 분명히 좋은 툴은 맞지만, 하지만 왜 때문인지 나는 한번도 사용해본 적이 없다. 처음 개발할 때부터 QueryPie, Sequel Pro, DBeaver 같은 DB tool만 사용했기 때문에 굳이 사용해야 하는 필요성을 못느꼈다.
 
@@ -104,6 +104,6 @@ Prisma1부터 느낀 거지만 Prisma는 공식문서를 정말 잘 만들었다
 
 공식문서를 8~90%정도 다 읽어본 것 같은데(~~~대부분 까먹음..~~~), 그 후에도 심심할 때 한번씩 읽어보면 또 모르는 내용이 어디선가 튀어 나온다.
 
-![image6.png](./image6.png)
+![image6.png](.images/../images/rough_look_prisma-6.png)
 
 그리고 사용하다 잘 모르는 부분은 [Prisma slack](https://slack.prisma.io/)에 자유롭게 물어볼 수 있다. 좋은 점은, 일반 사용자분들도 대답을 잘 해주시지만 실제 Prisma 개발팀원 분들이 직접 댓글을 달아주시는게 좋았다. 실제 사용자들과 의사소통을 많이 한다는 점에서 Prisma라는 오픈소스에 대해 더욱 믿음이 갔다.
