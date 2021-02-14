@@ -113,5 +113,3 @@ Prisma1부터 느낀 거지만 Prisma는 공식문서를 정말 잘 만들었다
 - <https://www.prisma.io/docs/concepts/components/prisma-schema>
 - <https://www.prisma.io/docs/guides/upgrade-guides/upgrade-from-prisma-1>
 - <https://github.com/prisma/prisma>
-
--

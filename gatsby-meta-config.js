@@ -2,7 +2,7 @@ module.exports = {
   title: `pyh`,
   description: `Blog posted about ...`,
   author: `yoenho Park`,
-  introduction: `공부한 내용을 정리하고 공유합니다 💻 Nçode.js, TypeScript, GraphQL, Nexus, Prisma2`,
+  introduction: `공부한 내용을 정리하고 공유합니다 💻 Node.js, TypeScript, GraphQL, Nexus, Prisma2`,
   siteUrl: `https://pyh.netlify.app/`, // Your blog site url
   social: {
     github: `https://github.com/pyh0414`, // Your GitHub account
