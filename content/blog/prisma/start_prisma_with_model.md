@@ -370,3 +370,11 @@ createAt DateTime @default(now())
 
 - Prisma 스키마 (예 : random ())에서 표현할 수없는 기본값을 나타냄
 - introspection 한 후에만 사용 가능
+
+## 📖 Reference
+
+- <https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference>
+- <https://www.prisma.io/docs/concepts/database-connectors/mysql#configuring-an-ssl-connection>
+- <https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#binarytargets-options>
+- <https://github.com/prisma/prisma/releases/tag/2.16.0>
+- <https://www.prisma.io/docs/concepts/components/preview-features/native-types>

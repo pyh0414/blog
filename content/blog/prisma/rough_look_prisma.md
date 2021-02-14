@@ -107,3 +107,11 @@ Prisma1부터 느낀 거지만 Prisma는 공식문서를 정말 잘 만들었다
 ![image6.png](.images/../images/rough_look_prisma-6.png)
 
 그리고 사용하다 잘 모르는 부분은 [Prisma slack](https://slack.prisma.io/)에 자유롭게 물어볼 수 있다. 좋은 점은, 일반 사용자분들도 대답을 잘 해주시지만 실제 Prisma 개발팀원 분들이 직접 댓글을 달아주시는게 좋았다. 실제 사용자들과 의사소통을 많이 한다는 점에서 Prisma라는 오픈소스에 대해 더욱 믿음이 갔다.
+
+## 📖 Reference
+
+- <https://www.prisma.io/docs/concepts/components/prisma-schema>
+- <https://www.prisma.io/docs/guides/upgrade-guides/upgrade-from-prisma-1>
+- <https://github.com/prisma/prisma>
+
+-
