@@ -117,7 +117,7 @@ model을 정의할 때 사용할 수 있는 data type 단위로 실제 DB native
 2. `Boolean`
 3. `Int`
 4. `Float`
-5. `DateTim`
+5. `DateTime`
 6. `Json`
 7. `Decimal`
 8. `Bytes`
