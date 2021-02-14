@@ -100,10 +100,10 @@ Prisma model을 정의합니다. model은 User, Post...등 @prisma/client에서 
 model의 모든 데이터(row)는 고유하게 식별할 수 있어야 하며 model을 정의할 때 아래의 attributes중 하나를 반드시 사용해야 합니다.
 &nbsp;
 
-- @unique
-- @@unique
-- @id
-- @@id
+- `@unique`
+- `@@unique`
+- `@id`
+- `@@id`
 
 &nbsp;
 
