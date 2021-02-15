@@ -627,7 +627,7 @@ model User {
 
 이번에 Prisma relation을 한번 알아보았는데요, 예전에 instgram copy 토이프로젝트를 할 때 relation 부분을 많이 봤었는데, 다시 한번 정리할 수 있었습니다.
 
-그리고 Prisma가 relation을 굉장히 유연하고 직관적으로 지원해준다는 느낌읇 받았습니다.
+그리고 Prisma가 relation을 굉장히 유연하고 직관적으로 지원해준다는 느낌을 받았습니다.
 
 ## 📖 Reference
 
