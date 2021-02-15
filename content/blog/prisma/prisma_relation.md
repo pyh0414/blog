@@ -1,5 +1,5 @@
 ---
-title: '[Prisma] Relation'
+title: '[Prisma] Prisma Relation'
 date: 2021-02-14 15:02:46
 category: prisma
 thumbnail: { thumbnailSrc }
