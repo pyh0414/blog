@@ -571,7 +571,7 @@ CREATE TABLE "_UserFollows" (
 
 &nbsp;
 
-🧪 이쯤되면 대충 흐름을 예상할 수 있겠지만 그대로 테스트를 해보겠습니다.
+🧪 이쯤되면 대충 흐름을 예상할 수 있겠지만 그래도 테스트 해보겠습니다.
 
 ```database
 const user1 = await prisma.user.create({
