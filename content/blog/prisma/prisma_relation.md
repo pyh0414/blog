@@ -8,7 +8,7 @@ draft: false
 
 # Support RDB
 
-현재 Prisma는 RDB를 기반의 여러 DBMS를 지원합니다. NoSQL은 아직 지원하지 않는 상태이며 [Prisma Roadmap](https://www.notion.so/Prisma-Roadmap-50766227b779464ab98899accb98295f)에서 `진행중인 작업`이라고 나와 있습니다. Prisma가 NoSQL을 어떤식으로 지원할지 궁금하네요🤔
+현재 Prisma는 RDB 기반의 여러 DBMS를 지원합니다. NoSQL은 아직 지원하지 않는 상태이며 [Prisma Roadmap](https://www.notion.so/Prisma-Roadmap-50766227b779464ab98899accb98295f)에서 `진행중인 작업`이라고 나와 있습니다. Prisma가 NoSQL을 어떤식으로 지원할지 궁금하네요🤔
 
 Prisma가 현재 지원하는 DB는 아래와 같습니다.
 
