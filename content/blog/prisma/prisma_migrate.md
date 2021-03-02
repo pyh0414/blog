@@ -67,7 +67,7 @@ Prisma migrate가 굴러가는(?) 전체적인 흐름은 다음과 같습니다.
 prisma migrate dev --create-only --preview-feature
 ```
 
-⚠️ <u>npx prisma migrate dev --preview-feature 라는 명령어를 바로 입력해도 되지만 이렇게 되면 draft migration을 생성하는 동시에 바로 적용해 버립니다. 지금은 단계별로 하는 과정이기 때문에 --create-only 옵션으로 합니다.</u>
+⚠️ <u>npx prisma migrate dev --preview-feature 라는 명령어를 바로 입력해도 되지만 이렇게 되면 draft migration을 생성하는 동시에 바로 적용해 버립니다. 지금은 단계별로 하는 과정이므로 --create-only 옵션으로 합니다.</u>
 
 이후 Migration이름을 입력하면 <u>prisma/migrations/</u>에 .sql파일이 생성됩니다. Prisma 공식문서에서 말하는 migration의 장점인 **이력관리**로 우리의 수정사항을 prisma/migration/에서 관리할 수 있습니다.
 
@@ -177,7 +177,7 @@ npx prisma migrate dev --create-only --preview-feature
 npx prisma migrate deploy --preview-feature
 ```
 
-1~5번 과정에서 4번 과정만 수행합니다. draft migration을 실제 db schema에 적용하며 \_prisma_migrations에 row가 생성됩니다. 단 여기서, 변경된 구조로 @prisma/client가 업데이트 되지 않습니다. 그렇기 때문에 prisma generate 명령어를 수행해주어야 합니다.
+1~5번 과정에서 4번 과정만 수행합니다. draft migration을 실제 db schema에 적용하며 \_prisma_migrations에 row가 생성됩니다. 단 여기서, 변경된 구조로 @prisma/client가 업데이트 되지 않으므로 추가적으로 prisma generate 명령어를 수행해주어야 합니다.
 
 &nbsp;
 
@@ -272,7 +272,7 @@ migrations/
 Everything is now in sync.
 ```
 
-column 변경의 경우 default value, nullable하게 해도 column을 drop하고 create하는 과정을 거치기 때문에 `Some data will be lost.` 경고를 보이지만 column 추가의 경우 단지 추가하는 것이기 때문에 아무런 경고도 보이지 않습니다.
+column 변경의 경우 default value, nullable하게 해도 column을 drop하고 create하는 하기 때문에 `Some data will be lost.` 경고가 나오지만 column 추가의 경우 단지 추가하는 것이기 때문에 아무런 경고도 보이지 않습니다.
 
 ### column 삭제
 
@@ -303,7 +303,7 @@ ALTER TABLE `User` DROP COLUMN `age`;
 
 위의 column name 변경을 보면 column name을 변경하고 migrate하고 난 후 생성된 query는 column을 `drop`하고 `create`하는 과정을 거칩니다. 그렇기 때문에 당연히 data loss가 발생할 수 밖에 없습니다.
 
-🤔 _prisma가 column을 drop, create하는 이유는 아마, 변경된 name2라는 column이 `새로 생성된`건지 `변경된` 건지에 대한 정확한 기준이 없기 때문에 그냥 name이 없어졌기 때문에 drop, name2가 생성되었기 떄문에 create한다고 생각합니다...(아닐수도)_
+🤔 _prisma가 column을 drop, create하는 이유는 아마, 변경된 name2라는 column이 `새로 생성된`건지 `변경된` 건지에 대한 정확한 기준이 없고 그냥 name이 없어졌기 때문에 drop, name2가 생성되었기 떄문에 create한다고 생각합니다...(아닐수도)_
 
 하지만 데이터 손실없이 column 명을 변경할 수 있는 DDL이 있습니다. 우리는 이 명령어로 draft migration을 생성하고 deploy하면 됩니다 !
 
