@@ -26,7 +26,7 @@ base(맨 아래 부분, 기초, 토대)를 re(다시 만든다, 설정한다)한
 
 # merge
 
-각 브랜치의 커밋들을 `시간순`으로 합치고 merge commit을 하나 생성합니다.
+각 브랜치의 커밋들을 `시간순`으로 합치고 merge commit을 하나 생성합니다(fast-forward의 경우 merge commit이 안생김).
 
 branch2위치에서 git merge branch1을 하면 branch1의 내용을 branch2에게 merge한다, 붙인다, 합친다 라고 생각할 수 있습니다. merge된 후 merge했음을 기록하는 commit이 branch2에 생깁니다.
 
